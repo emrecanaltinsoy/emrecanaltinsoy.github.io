@@ -1,0 +1,12 @@
+# Example Site settings
+
+header_pages:
+  - index.md
+
+listen_for_clients_preferred_style: true
+
+plugins:
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
