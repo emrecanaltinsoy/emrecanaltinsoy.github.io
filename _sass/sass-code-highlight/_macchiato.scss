@@ -1,0 +1,206 @@
+///macchiato
+$macchiato-base: #24273a;
+$macchiato-text: #cad3f5;
+$macchiato-pink: #f5bde6;
+$macchiato-mauve: #c6a0f6;
+$macchiato-red: #ed8796;
+$macchiato-maroon: #ee99a0;
+$macchiato-peach: #f5a97f;
+$macchiato-yellow: #eed49f;
+$macchiato-green: #a6da95;
+$macchiato-teal: #8bd5ca;
+$macchiato-sky: #91d7e3;
+$macchiato-sapphire: #7dc4e4;
+$macchiato-blue: #8aadf4;
+$macchiato-lavender: #b7bdf8;
+$macchiato-text: #cad3f5;
+$macchiato-subtext1: #b8c0e0;
+$macchiato-subtext0: #a5adcb;
+$macchiato-overlay2: #939ab7;
+$macchiato-overlay1: #8087a2;
+$macchiato-overlay0: #6e738d;
+$macchiato-surface2: #5b6078;
+$macchiato-surface1: #494d64;
+$macchiato-surface0: #363a4f;
+$macchiato-base: #24273a;
+$macchiato-mantle: #1e2030;
+$macchiato-crust: #181926;
+
+
+.highlight {
+  .hll {
+    background-color: $macchiato-surface1;
+  }
+  background: lighten($macchiato-surface0, 5%);
+  .c {
+    color: $macchiato-subtext1;
+    font-style: italic;
+  }
+  .err {
+    border: 1px solid $macchiato-red;
+  }
+  .k {
+    color: $macchiato-green;
+    font-weight: bold;
+  }
+  .o {
+    color: $macchiato-subtext0;
+  }
+  .cm {
+    color: $macchiato-subtext1;
+    font-style: italic;
+  }
+  .cp {
+    color: $macchiato-peach;
+  }
+  .c1, .cs {
+    color: $macchiato-subtext1;
+    font-style: italic;
+  }
+  .gd {
+    color: $macchiato-maroon;
+  }
+  .ge {
+    font-style: italic;
+  }
+  .gr {
+    color: $macchiato-red;
+  }
+  .gh {
+    color: $macchiato-blue;
+    font-weight: bold;
+  }
+  .gi {
+    color: $macchiato-green;
+  }
+  .go {
+    color: $macchiato-subtext0;
+  }
+  .gp {
+    color: $macchiato-blue;
+    font-weight: bold;
+  }
+  .gs {
+    font-weight: bold;
+  }
+  .gu {
+    color: $macchiato-lavender;
+    font-weight: bold;
+  }
+  .gt {
+    color: $macchiato-sky;
+  }
+  .kc, .kd, .kn {
+    color: $macchiato-green;
+    font-weight: bold;
+  }
+  .kp {
+    color: $macchiato-green;
+  }
+  .kr {
+    color: $macchiato-green;
+    font-weight: bold;
+  }
+  .kt {
+    color: $macchiato-peach;
+  }
+  .m {
+    color: $macchiato-subtext0;
+  }
+  .s {
+    color: $macchiato-pink;
+  }
+  .na {
+    color: $macchiato-yellow;
+  }
+  .nb {
+    color: $macchiato-green;
+  }
+  .nc {
+    color: $macchiato-blue;
+    font-weight: bold;
+  }
+  .no {
+    color: $macchiato-maroon;
+  }
+  .nd {
+    color: $macchiato-peach;
+  }
+  .ni {
+    color: $macchiato-subtext0;
+    font-weight: bold;
+  }
+  .ne {
+    color: $macchiato-red;
+    font-weight: bold;
+  }
+  .nf {
+    color: $macchiato-blue;
+  }
+  .nl {
+    color: $macchiato-yellow;
+  }
+  .nn {
+    color: $macchiato-blue;
+    font-weight: bold;
+  }
+  .nt {
+    color: $macchiato-green;
+    font-weight: bold;
+  }
+  .nv {
+    color: $macchiato-lavender;
+  }
+  .ow {
+    color: $macchiato-peach;
+    font-weight: bold;
+  }
+  .w {
+    color: $macchiato-subtext0;
+  }
+  .mf, .mh, .mi, .mo {
+    color: $macchiato-subtext0;
+  }
+  .sb, .sc {
+    color: $macchiato-pink;
+  }
+  .sd {
+    color: $macchiato-pink;
+    font-style: italic;
+  }
+  .s2 {
+    color: $macchiato-pink;
+  }
+  .se {
+    color: $macchiato-peach;
+    font-weight: bold;
+  }
+  .sh {
+    color: $macchiato-pink;
+  }
+  .si {
+    color: $macchiato-lavender;
+    font-weight: bold;
+  }
+  .sx {
+    color: $macchiato-green;
+  }
+  .sr {
+    color: $macchiato-lavender;
+  }
+  .s1 {
+    color: $macchiato-pink;
+  }
+  .ss {
+    color: $macchiato-lavender;
+  }
+  .bp {
+    color: $macchiato-green;
+  }
+  .vc, .vg, .vi {
+    color: $macchiato-lavender;
+  }
+  .il {
+    color: $macchiato-subtext0;
+  }
+}

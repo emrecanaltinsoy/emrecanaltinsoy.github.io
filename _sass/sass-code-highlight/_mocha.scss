@@ -1,0 +1,206 @@
+///mocha
+$mocha-base: #1e1e2e;
+$mocha-text: #cdd6f4;
+$mocha-pink: #f5c2e7;
+$mocha-mauve: #cba6f7;
+$mocha-red: #f38ba8;
+$mocha-maroon: #eba0ac;
+$mocha-peach: #fab387;
+$mocha-yellow: #f9e2af;
+$mocha-green: #a6e3a1;
+$mocha-teal: #94e2d5;
+$mocha-sky: #89dceb;
+$mocha-sapphire: #74c7ec;
+$mocha-blue: #89b4fa;
+$mocha-lavender: #b4befe;
+$mocha-text: #cdd6f4;
+$mocha-subtext1: #bac2de;
+$mocha-subtext0: #a6adc8;
+$mocha-overlay2: #9399b2;
+$mocha-overlay1: #7f849c;
+$mocha-overlay0: #6c7086;
+$mocha-surface2: #585b70;
+$mocha-surface1: #45475a;
+$mocha-surface0: #313244;
+$mocha-base: #1e1e2e;
+$mocha-mantle: #181825;
+$mocha-crust: #11111b;
+
+
+.highlight {
+  .hll {
+    background-color: $mocha-surface1;
+  }
+  background: lighten($mocha-surface0, 5%);
+  .c {
+    color: $mocha-subtext1;
+    font-style: italic;
+  }
+  .err {
+    border: 1px solid $mocha-red;
+  }
+  .k {
+    color: $mocha-green;
+    font-weight: bold;
+  }
+  .o {
+    color: $mocha-subtext0;
+  }
+  .cm {
+    color: $mocha-subtext1;
+    font-style: italic;
+  }
+  .cp {
+    color: $mocha-peach;
+  }
+  .c1, .cs {
+    color: $mocha-subtext1;
+    font-style: italic;
+  }
+  .gd {
+    color: $mocha-maroon;
+  }
+  .ge {
+    font-style: italic;
+  }
+  .gr {
+    color: $mocha-red;
+  }
+  .gh {
+    color: $mocha-blue;
+    font-weight: bold;
+  }
+  .gi {
+    color: $mocha-green;
+  }
+  .go {
+    color: $mocha-subtext0;
+  }
+  .gp {
+    color: $mocha-blue;
+    font-weight: bold;
+  }
+  .gs {
+    font-weight: bold;
+  }
+  .gu {
+    color: $mocha-lavender;
+    font-weight: bold;
+  }
+  .gt {
+    color: $mocha-sky;
+  }
+  .kc, .kd, .kn {
+    color: $mocha-green;
+    font-weight: bold;
+  }
+  .kp {
+    color: $mocha-green;
+  }
+  .kr {
+    color: $mocha-green;
+    font-weight: bold;
+  }
+  .kt {
+    color: $mocha-peach;
+  }
+  .m {
+    color: $mocha-subtext0;
+  }
+  .s {
+    color: $mocha-pink;
+  }
+  .na {
+    color: $mocha-yellow;
+  }
+  .nb {
+    color: $mocha-green;
+  }
+  .nc {
+    color: $mocha-blue;
+    font-weight: bold;
+  }
+  .no {
+    color: $mocha-maroon;
+  }
+  .nd {
+    color: $mocha-peach;
+  }
+  .ni {
+    color: $mocha-subtext0;
+    font-weight: bold;
+  }
+  .ne {
+    color: $mocha-red;
+    font-weight: bold;
+  }
+  .nf {
+    color: $mocha-blue;
+  }
+  .nl {
+    color: $mocha-yellow;
+  }
+  .nn {
+    color: $mocha-blue;
+    font-weight: bold;
+  }
+  .nt {
+    color: $mocha-green;
+    font-weight: bold;
+  }
+  .nv {
+    color: $mocha-lavender;
+  }
+  .ow {
+    color: $mocha-peach;
+    font-weight: bold;
+  }
+  .w {
+    color: $mocha-subtext0;
+  }
+  .mf, .mh, .mi, .mo {
+    color: $mocha-subtext0;
+  }
+  .sb, .sc {
+    color: $mocha-pink;
+  }
+  .sd {
+    color: $mocha-pink;
+    font-style: italic;
+  }
+  .s2 {
+    color: $mocha-pink;
+  }
+  .se {
+    color: $mocha-peach;
+    font-weight: bold;
+  }
+  .sh {
+    color: $mocha-pink;
+  }
+  .si {
+    color: $mocha-lavender;
+    font-weight: bold;
+  }
+  .sx {
+    color: $mocha-green;
+  }
+  .sr {
+    color: $mocha-lavender;
+  }
+  .s1 {
+    color: $mocha-pink;
+  }
+  .ss {
+    color: $mocha-lavender;
+  }
+  .bp {
+    color: $mocha-green;
+  }
+  .vc, .vg, .vi {
+    color: $mocha-lavender;
+  }
+  .il {
+    color: $mocha-subtext0;
+  }
+}
