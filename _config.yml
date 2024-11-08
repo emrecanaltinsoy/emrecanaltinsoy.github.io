@@ -1,4 +1,11 @@
-# Example Site settings
+# Site settings
+title:          shell-snippets
+description:    "snippets, notes and chemical X"
+baseurl:        ""
+url:            ""
+
+# https://jekyllrb.com/docs/configuration/options/
+timezone: Asia/Kolkata
 
 header_pages:
   - index.md
