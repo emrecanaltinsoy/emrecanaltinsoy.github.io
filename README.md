@@ -12,16 +12,9 @@
 ### _config.yaml
 
 In addition to jekyll's default configuration options, you can provide:
-- `header_pages` to specify which pages should be displayed in navbar
 - `style_light` and `style_dark` to specify which predefined style (colors) should be used for light and dar modes
 
 ```yaml
-header_pages:
-  - index.md
-  - about.md
-
-auto_dark_mode: true # true (default) or false
-
 style_light: "" # off (default), available option: latte, frappe, macchiato, mocha
 style_dark: "" # off (default), available option: latte, frappe, macchiato, mocha
 ```
