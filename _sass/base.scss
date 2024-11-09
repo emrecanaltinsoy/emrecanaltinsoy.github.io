@@ -87,9 +87,16 @@ p {
 footer {
     color: var(--text-color);
     border-top: var(--border);
-    margin: 20px auto 15px;
-    padding-top: 10px;
-    text-align: right;
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+footer .copy {
+    font-size: 0.9em;
+    margin-top: 1.5em;
+}
+footer .copy p {
+    margin: 0;
 }
 header {
     margin-top: 25px;
@@ -98,9 +105,6 @@ header {
 header p {
     text-align: left;
     margin: 0;
-}
-footer {
-    margin-bottom: 20px;
 }
 
 /**
