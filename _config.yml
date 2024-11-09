@@ -1,7 +1,7 @@
 # Site settings
-title:          shell-snippets
-description:    "snippets, notes and chemical X"
-baseurl:        ""
+title:          snippet-diary
+description:    "notes about code, setups, workflow and why your favorite editor is the best one ever"
+baseurl:        "/snippet-diary"
 url:            ""
 
 # https://jekyllrb.com/docs/configuration/options/
@@ -10,7 +10,7 @@ timezone: Asia/Kolkata
 header_pages:
   - index.md
 
-listen_for_clients_preferred_style: true
+auto_dark_mode: true
 
 plugins:
   - jekyll-seo-tag
@@ -19,6 +19,3 @@ plugins:
 markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
