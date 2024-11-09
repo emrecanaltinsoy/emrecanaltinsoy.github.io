@@ -10,7 +10,10 @@ timezone: Asia/Kolkata
 header_pages:
   - index.md
 
-auto_dark_mode: true
+# Available style options based on catppuccin: latte, frappe, macchiato, mocha
+style_light: latte 
+style_dark: macchiato
+
 
 plugins:
   - jekyll-seo-tag

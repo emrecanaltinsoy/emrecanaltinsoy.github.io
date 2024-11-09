@@ -13,8 +13,7 @@
 
 In addition to jekyll's default configuration options, you can provide:
 - `header_pages` to specify which pages should be displayed in navbar
-- `auto_dark_mode` boolean, used to allow users to choose light or dark style based on their preferences (mostly affected by OS dark or light theme, details see https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
-- `style` to specify which predefined style (colors) should be used
+- `style_light` and `style_dark` to specify which predefined style (colors) should be used for light and dar modes
 
 ```yaml
 header_pages:
