@@ -4,14 +4,9 @@ layout: page
 permalink: /about
 ---
 
-`snippet-diary` is a based on [jekyll-theme-console](https://github.com/b2a3e8/jekyll-theme-console) with a few changes:
+This is an example of a page. 
 
-- Catpucchin theme defaults for light and dark mode
-- User's preferred style (light/dark) is used by default
-- Posts arranged by tags in archive
-- Add new post using `gistid` option 
-
-This is an example of how you can add a page. New pages can be created in the `_pages` directory with the following frontmatter:
+New pages can be created in the `_pages` directory with the following frontmatter:
 
 ```markdown
 ---
