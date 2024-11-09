@@ -7,13 +7,13 @@ url:            ""
 # https://jekyllrb.com/docs/configuration/options/
 timezone: Asia/Kolkata
 
-header_pages:
-  - index.md
-
 # Available style options based on catppuccin: latte, frappe, macchiato, mocha
 style_light: latte 
 style_dark: macchiato
 
+#include pages
+include:
+  - _pages
 
 plugins:
   - jekyll-seo-tag
