@@ -125,6 +125,7 @@ header p {
 :not(.menu) > ul {
     list-style: none;
     padding-left: 0;
+    margin-bottom: 9px;
 }
 :not(.menu) > ul {
     list-style-type: none;
@@ -144,14 +145,18 @@ header p {
 }
 .menu ul {
     margin-top: 12px;
-    margin-bottom: 12px;
     padding-left: 0px;
     list-style-type: none;
-    text-align: left;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 .menu ul li {
-    display: inline;
-    margin-left: 10px;
+    margin-left: 2em;
+}
+.menu ul li:first-child {
+    margin-left: 0px;
+    margin-right: auto;
 }
 .menu ul li a {
     text-decoration: none;
