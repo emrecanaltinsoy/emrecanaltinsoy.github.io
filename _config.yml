@@ -1,7 +1,7 @@
 # Site settings
-title:          snippet-diary
+title:          snippet-book
 description:    "notes about code, setups, workflow and why your favorite editor is the best one ever"
-baseurl:        "/snippet-diary"
+baseurl:        "/snippet-book"
 url:            ""
 
 # https://jekyllrb.com/docs/configuration/options/
