@@ -1,6 +1,6 @@
-# snippet-diary
+# snippet-book
 
-`snippet-diary` is a Jekyll blog theme based on [jekyll-theme-console](https://github.com/b2a3e8/jekyll-theme-console) with a few changes:
+`snippet-book` is a Jekyll blog theme based on [jekyll-theme-console](https://github.com/b2a3e8/jekyll-theme-console) with a few changes:
 
 - Catpucchin theme defaults for light and dark mode
 - User's preferred style (light/dark) is used by default
@@ -22,6 +22,7 @@ style_dark: "" # off (default), available option: latte, frappe, macchiato, moch
 ### front matter variables
 
 Besides the predefined [front matter](https://jekyllrb.com/docs/front-matter/) variables from jekyll this theme also supports following variables:
+
 - `title` to set a title for the page
 - `lang` to specify the language, defaults to 'en'
 - `robots` to control the robot meta tag ([details](http://longqian.me/2017/02/12/jekyll-robots-configuration/)) - this may be useful for example to set `NOINDEX` to tag pages
@@ -41,8 +42,6 @@ If you want to customize this theme, follow this steps:
 To set up your environment to develop this theme, run `bundle install`.
 
 Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 
 ## License
 
