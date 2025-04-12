@@ -6,7 +6,7 @@
  * Style variables
  */
 $base-font-family: "JetBrains Mono", monospace !default;
-$base-font-size: 14px !default;
+$base-font-size: 12px !default;
 $mobile-font-size: 12px !default;
 $base-line-height: 1.5 !default;
 $container-width: 90% !default;
@@ -96,7 +96,7 @@ footer .copy {
     margin-top: 1.5em;
 }
 footer .copy p {
-    margin: 0;
+    margin: 0.5em 0 0.5em 0;
 }
 header {
     margin-top: 25px;
