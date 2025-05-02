@@ -54,9 +54,9 @@ Besides the predefined [front matter](https://jekyllrb.com/docs/front-matter/) v
 If you want to customize this theme, follow this steps:
 1. Fork this repository (you can use the fork as your own theme or directly as your website)
 2. Create or modify files in `_layouts` directory for html-based changes
-3. Create or modify files in `_sass` and `assets` for css-based changes
+3. Create or modify files in `_sass` under `assets` for css-based changes
    - You can change things which are used in light and dark theme (like font-size) in `_sass/base.scss`. You'll find style variables at the top.
-   - Style-specific definitions are in `_sass/_dark.scss` respectively in `_sass/_light.scss`. You can change things like background-color there.
+   - Catppuccin colours are under `assets/_sass/colours/_<name-of-theme>.scss`. These varaibles are then used to specify theme-specific colours in `_sass/theme/_theme-<name-of-theme>.scss`. 
 
 
 ## Development
