@@ -1,6 +1,5 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,400,500,600,700&display=swap");
-@import "theme/code";
 
 /**
  * Style variables
@@ -43,6 +42,16 @@ ol {
     margin: 0px;
     color: var(--text-color);
 }
+ul {
+  padding-left: 2em;
+}
+
+ul li {
+  text-indent: -1em;
+  padding-left: 1em;
+  margin-bottom: 0.15em;
+}
+
 a {
     text-decoration: underline;
     color: var(--link-color);

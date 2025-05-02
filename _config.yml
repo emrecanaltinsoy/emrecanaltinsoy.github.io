@@ -15,6 +15,11 @@ style_dark: macchiato
 include:
   - _pages
 
+# Assets
+sass:
+  sass_dir:     /assets/css/_sass
+  style:        compressed
+
 plugins:
   - jekyll-seo-tag
 

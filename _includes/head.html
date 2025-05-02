@@ -20,10 +20,10 @@
   {%- assign style_dark_css = site.style_dark | append: '.css' -%}
 
   {%- if site.style_light == site.style_dark -%}
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/" | append: style_light_css | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_light_css | relative_url }}">
   {%- else -%}
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/" | append: style_light_css | relative_url }}" media="screen and (prefers-color-scheme: light)">
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/" | append: style_dark_css | relative_url }}" media="screen and (prefers-color-scheme: dark)">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_light_css | relative_url }}" media="screen and (prefers-color-scheme: light)">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_dark_css | relative_url }}" media="screen and (prefers-color-scheme: dark)">
   {%- endif -%}
 
 </head>

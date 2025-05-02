@@ -8,7 +8,7 @@ pre {
 }
 
 pre code {
-  background-color: transparent;
+  background-color: var(--inline-code-background);
   color: inherit;
   font-size: 100%;
   padding: 0;
