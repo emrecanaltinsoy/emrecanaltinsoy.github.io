@@ -1,5 +1,6 @@
 code {
   padding: .25em .5em;
+  background-color: var(--inline-code-background);
 }
 
 pre {
@@ -8,10 +9,10 @@ pre {
 }
 
 pre code {
-  background-color: var(--inline-code-background);
   color: inherit;
   font-size: 100%;
   padding: 0;
+  background-color: transparent;
 }
 
 .highlight {
