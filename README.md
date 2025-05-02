@@ -13,7 +13,7 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img height="80%" width="80%" src="https://snippets.jitin.xyz/assets/img/demo/latte.png" alt="Preview of Latte theme"/>
+<img src="https://snippets.jitin.xyz/assets/img/demo/latte.png" alt="Preview of Latte theme"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
