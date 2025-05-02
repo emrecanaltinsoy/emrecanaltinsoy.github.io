@@ -4,8 +4,6 @@
 
 - Catpucchin theme defaults for light and dark mode
 - User's preferred style (light/dark) is used by default
-- Posts arranged by tags in archive
-- Add new post using `gistid` option
 
 ## Usage
 
