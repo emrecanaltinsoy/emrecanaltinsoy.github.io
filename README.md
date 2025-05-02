@@ -1,9 +1,33 @@
 # snippet-book
 
+<p align="center">
+<img src="https://snippets.jitin.xyz/assets/img/demo/composite.png" alt="Composite example of the Catppuccin theme for snippet-book"/>
+</p>
+
 `snippet-book` is a Jekyll blog theme based on [jekyll-theme-console](https://github.com/b2a3e8/jekyll-theme-console) with a few changes:
 
 - Catpucchin theme defaults for light and dark mode
 - User's preferred style (light/dark) is used by default
+
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+<img height="80%" width="80%" src="https://snippets.jitin.xyz/assets/img/demo/latte.png" alt="Preview of Latte theme"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+<img src="https://snippets.jitin.xyz/assets/img/demo/frappe.png?raw=true" alt="Preview of Frappé theme"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+<img src="https://snippets.jitin.xyz/assets/img/demo/macchiato.png?raw=true" alt="Preview of Macchiato theme"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+<img src="https://snippets.jitin.xyz/assets/img/demo/mocha.png?raw=true" alt="Preview of Mocha theme"/>
+</details>
+
 
 ## Usage
 
