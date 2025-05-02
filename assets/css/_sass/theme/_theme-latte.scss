@@ -3,14 +3,14 @@
 :root {
   --base-color: #{$latte-blue};
   --border: dashed 1px #{rgba($latte-blue, 1)};
-  --selection-background: #{rgba($latte-blue, 0.99)};
+  --selection-background: #{rgba($latte-blue, 0.5)};
   --selection-text: #{$latte-base};
   --background-color: #{$latte-base};
   --text-color: #{$latte-text};
   --placeholder-color: #{$latte-subtext1};
   --link-color: #{$latte-pink};
   --inline-code-background: #{$latte-surface0};
-  //code theme colors
+
   --code-color-1: #{$latte-green};
   --code-color-2: #{$latte-base};
   --code-color-3: #{$latte-red};

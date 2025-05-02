@@ -3,7 +3,7 @@
 :root {
   --base-color: #{$mocha-blue};
   --border: dashed 1px #{rgba($mocha-sapphire, 1)};
-  --selection-background: #{rgba($mocha-sapphire, 0.99)};
+  --selection-background: #{rgba($mocha-sapphire, 0.5)};
   --selection-text: #{$mocha-text};
   --background-color: #{$mocha-base};
   --text-color: #{$mocha-text};

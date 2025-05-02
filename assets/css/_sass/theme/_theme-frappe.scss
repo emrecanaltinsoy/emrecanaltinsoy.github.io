@@ -6,14 +6,15 @@
 
 :root {
     --base-color: #{$frappe-blue};
-    --border: dashed 1px #{$frappe-sapphire};
-    --selection-background: #{$frappe-sky};
+    --border: dashed 1px #{rgba($frappe-sapphire, 1)};
+    --selection-background: #{rgba($frappe-sky, 0.5)};
     --selection-text: #{$frappe-text};
     --background-color: #{$frappe-base};
     --text-color: #{$frappe-text};
     --placeholder-color: #{$frappe-subtext1};
     --link-color: #{$frappe-pink};
     --inline-code-background: #{$frappe-surface1};
+
     --code-color-1: #{$frappe-green};
     --code-color-2: #{$frappe-text};
     --code-color-3: #{$frappe-red};
