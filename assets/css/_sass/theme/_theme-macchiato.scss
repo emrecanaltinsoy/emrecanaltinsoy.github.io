@@ -3,7 +3,7 @@
 :root {
   --base-color: #{$macchiato-blue};
   --border: dashed 1px #{rgba($macchiato-sapphire, 1)};
-  --selection-background: #{rgba($macchiato-sapphire, 0.99)};
+  --selection-background: #{rgba($macchiato-sapphire, 0.5)};
   --selection-text: #{$macchiato-text};
   --background-color: #{$macchiato-base};
   --text-color: #{$macchiato-text};
