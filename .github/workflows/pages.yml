@@ -15,14 +15,15 @@ jobs:
           # So we use the magic number 2147483647 here which means infinite depth for git fetch
           # See https://github.com/actions/checkout/issues/520, https://stackoverflow.com/a/6802238
           fetch-depth: 2147483647
-
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v4
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          path: |
+            .asdf/**
+            vendor/bundle
+          key: ${{ runner.os }}-cache-${{ hashFiles('**/cache.key') }}
           restore-keys: |
-            ${{ runner.os }}-gems-
+            ${{ runner.os }}-cache-
 
       # Use GitHub Deploy Action to build and deploy to Github
       - uses: jeffreytse/jekyll-deploy-action@v0.6.0
