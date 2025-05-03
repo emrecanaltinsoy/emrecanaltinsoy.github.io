@@ -37,8 +37,8 @@ In addition to jekyll's default configuration options, you can provide:
 - `style_light` and `style_dark` to specify which predefined style (colors) should be used for light and dar modes
 
 ```yaml
-style_light: "" # off (default), available option: latte, frappe, macchiato, mocha
-style_dark: "" # off (default), available option: latte, frappe, macchiato, mocha
+style_light: "latte" # available option: latte, frappe, macchiato, mocha
+style_dark: "macchiato" # off (default), available option: latte, frappe, macchiato, mocha
 ```
 
 ### front matter variables
