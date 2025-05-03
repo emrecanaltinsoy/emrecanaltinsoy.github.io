@@ -1,7 +1,7 @@
 # snippet-book
 
 <p align="center">
-<img src="" alt="Composite example of the Catppuccin theme for snippet-book"/>
+<img src="https://snippets.jitin.xyz/assets/img/demo/composite.png" alt="Composite example of the Catppuccin theme for snippet-book"/>
 </p>
 
 `snippet-book` is a Jekyll blog theme based on [jekyll-theme-console](https://github.com/b2a3e8/jekyll-theme-console) with a few changes:
