@@ -141,8 +141,7 @@ Use `<hr>` for horizontal rules like this
 ```markdown
 <hr>
 ```
-
-gives you 
+gives you
 
 <hr>
 
