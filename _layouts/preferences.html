@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<p>Select your preferred theme:</p>
+<select id="preferences-theme-select" class="preferences-theme-select" aria-label="Select theme"
+  title="Select theme"></select>
+
+<p>Select your preferred font:</p>
+<select id="preferences-font-select" class="preferences-font-select" aria-label="Select font"
+  title="Select font"></select>
+
+<script>
+  (function () {
+    var config = PreferencesUtil.getConfig();
+
+    // Populate theme select
+    var themeSelect = document.getElementById('preferences-theme-select');
+    config.themes.forEach(function (theme) {
+      var option = document.createElement('option');
+      option.value = theme;
+      option.textContent = theme;
+      themeSelect.appendChild(option);
+    });
+    themeSelect.value = PreferencesUtil.getTheme();
+    themeSelect.addEventListener('change', function () {
+      PreferencesUtil.setTheme(themeSelect.value);
+    });
+
+    // Populate font select
+    var fontSelect = document.getElementById('preferences-font-select');
+    var fonts = config.fonts;
+    Object.keys(fonts).forEach(function (key) {
+      var option = document.createElement('option');
+      option.value = key;
+      option.textContent = fonts[key].name;
+      fontSelect.appendChild(option);
+    });
+    fontSelect.value = PreferencesUtil.getFont();
+    fontSelect.addEventListener('change', function () {
+      PreferencesUtil.setFont(fontSelect.value);
+    });
+  })();
+</script>

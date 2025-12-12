@@ -1,15 +1,57 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,400,500,600,700&display=swap");
+
+/**
+ * Font face declarations
+ */
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/assets/fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/assets/fonts/JetBrainsMonoNerdFont-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CaskaydiaCove Nerd Font';
+    src: url('/assets/fonts/CaskaydiaCoveNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CaskaydiaCove Nerd Font';
+    src: url('/assets/fonts/CaskaydiaCoveNerdFont-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 /**
  * Style variables
  */
-$base-font-family: "JetBrains Mono", monospace !default;
+$font-jetbrains: "JetBrains Mono", monospace;
+$font-caskaydia: "CaskaydiaCove Nerd Font", monospace;
 $base-font-size: 14px !default;
 $mobile-font-size: 16px !default;
 $base-line-height: 1.625 !default;
 $container-width: 90% !default;
 $container-max-width: 600px !default;
+
+/**
+ * Font selection via data attribute
+ */
+:root {
+    font-family: $font-jetbrains;
+}
+:root[data-font="caskaydia-cove"] {
+    font-family: $font-caskaydia;
+}
 
 /**
  * Global
@@ -18,7 +60,7 @@ body {
     background-color: var(--background-color);
     margin: 0 auto;
     padding: 0;
-    font-family: $base-font-family;
+    font-family: inherit;
     font-size: $base-font-size;
     color: var(--text-color);
     text-align: left;
@@ -182,7 +224,7 @@ header p {
     border: 1px solid var(--text-color);
     cursor: pointer;
     padding: 0.25em 0.5em;
-    font-family: $base-font-family;
+    font-family: inherit;
     font-size: $base-font-size;
     color: var(--text-color);
     transition: background-color 0.2s, color 0.2s;
