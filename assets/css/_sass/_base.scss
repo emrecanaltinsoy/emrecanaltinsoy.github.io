@@ -239,3 +239,95 @@ header p {
     color: var(--background-color);
     background-color: var(--base-color);
 }
+
+/**
+ * CV Complexity Slider
+ */
+.cv-complexity {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    margin-bottom: 1.5em;
+    padding: 0.5em 0;
+    border-bottom: var(--border);
+}
+.cv-complexity label {
+    margin: 0;
+    white-space: nowrap;
+}
+.cv-complexity input[type="range"] {
+    flex: 1;
+    max-width: 150px;
+    height: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: var(--text-color);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.cv-complexity input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background: var(--base-color);
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cv-complexity input[type="range"]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    background: var(--base-color);
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cv-complexity #cv-complexity-label {
+    min-width: 5em;
+    text-align: left;
+}
+
+/**
+ * CV Section Titles
+ */
+.cv-section {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.85em;
+    color: var(--subtext-color);
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+/**
+ * CV Entry Styling
+ */
+.cv-entry {
+    margin-bottom: 1.5em;
+}
+.cv-entry p {
+    margin-bottom: 0.5em;
+}
+
+/**
+ * CV Complexity Level Visibility
+ * Level 1 (Brief): Hide both summary and detailed
+ * Level 2 (Standard): Show summary, hide detailed
+ * Level 3 (Detailed): Hide summary, show detailed
+ */
+#cv-content .cv-summary,
+#cv-content .cv-detailed {
+    display: none;
+}
+#cv-content[data-complexity="2"] .cv-summary {
+    display: block;
+}
+#cv-content[data-complexity="3"] .cv-detailed {
+    display: block;
+}
+
+/* Hide elements at Brief level only */
+#cv-content[data-complexity="1"] .cv-hide-brief {
+    display: none;
+}

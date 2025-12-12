@@ -2,14 +2,14 @@
 title: Emrecan Altinsoy
 description: "notes about code, setups, workflow and why your favorite editor is the best one ever"
 baseurl: ""
-url: ""
+url: "emrecanaltinsoy.github.io"
 
 # https://jekyllrb.com/docs/configuration/options/
 timezone: Europe/Madrid
 
 # Available style options based on catppuccin: latte, frappe, macchiato, mocha
-style_light: latte
-style_dark: macchiato
+# style_light: latte
+# style_dark: macchiato
 
 #include pages
 include:
