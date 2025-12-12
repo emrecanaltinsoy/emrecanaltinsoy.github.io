@@ -3,10 +3,8 @@ layout: default
 ---
 
 {{ content }} {%- if site.posts.size > 0 -%}
-
-<p>Last 3 posts:</p>
 <ul>
-  {%- for post in site.posts limit:3 -%}
+  {%- for post in site.posts -%}
   <li>
     {%- assign date_format = "%d %b %Y" -%} [ {{ post.date | date:
     date_format }} ]

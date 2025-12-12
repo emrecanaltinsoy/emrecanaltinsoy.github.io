@@ -28,12 +28,12 @@
 <img src="https://snippets.jitin.xyz/assets/img/demo/mocha.png?raw=true" alt="Preview of Mocha theme"/>
 </details>
 
-
 ## Usage
 
 ### _config.yaml
 
 In addition to jekyll's default configuration options, you can provide:
+
 - `style_light` and `style_dark` to specify which predefined style (colors) should be used for light and dar modes
 
 ```yaml
@@ -52,12 +52,12 @@ Besides the predefined [front matter](https://jekyllrb.com/docs/front-matter/) v
 ## Customization
 
 If you want to customize this theme, follow this steps:
+
 1. Fork this repository (you can use the fork as your own theme or directly as your website)
 2. Create or modify files in `_layouts` directory for html-based changes
 3. Create or modify files in `_sass` under `assets` for css-based changes
    - You can change things which are used in light and dark theme (like font-size) in `_sass/base.scss`. You'll find style variables at the top.
-   - Catppuccin colours are under `assets/_sass/colours/_<name-of-theme>.scss`. These varaibles are then used to specify theme-specific colours in `_sass/theme/_theme-<name-of-theme>.scss`. 
-
+   - Catppuccin colours are under `assets/_sass/colours/_<name-of-theme>.scss`. These varaibles are then used to specify theme-specific colours in `_sass/theme/_theme-<name-of-theme>.scss`.
 
 ## Development
 
@@ -71,7 +71,7 @@ The theme is available as open source under the terms of the [MIT License](https
 
 PS: If you liked the theme, do star :star: it! Thanks!
 
-### Also, check out:
+### Also, check out
 
 - [autoCV](https://github.com/jitinnair1/autocv) - a LaTeX template that builds and deploys the CV using GitHub Actions, so you will always have a ready link for your latest CV
 - [gradfolio](https://github.com/jitinnair1/gradfolio) - a minimal, quick-setup template for a personal website/portfolio
