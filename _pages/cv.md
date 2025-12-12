@@ -103,3 +103,37 @@ Thesis: Ball and Beam System Control using Image Processing
 - **2019** - Altinsoy, E., Yilmaz, C., Wen, J., Wu, L., Yang, J., & Zhu, Y., *Raw g-band chromosome image segmentation using u-net based neural network.* In International Conference on Artificial Intelligence and Soft Computing. Springer.
 - **2018** - Yilmaz, I. C., Yang, J., Altinsoy, E., & Zhou, L., *An improved segmentation for raw g-band chromosome images.* In 2018 5th International Conference on Systems and Informatics (ICSAI). IEEE.
 {: .cv-detailed}
+
+## Certifications
+{: .cv-section .cv-hide-brief}
+
+---
+{: .cv-hide-brief}
+
+10 professional certifications in AWS, DevOps, ML/AI, and Big Data from Coursera and Udemy
+{: .cv-summary}
+
+- DevOps on AWS - Coursera
+- AWS Fundamentals Specialization - Coursera
+- Deploying Machine Learning Models in Production - Coursera
+- Docker & Kubernetes: The Practical Guide - Udemy
+- SQL with PostgreSQL for Beginners: Analyze \| Manipulate Data - Udemy
+- PySpark & AWS: Master Big Data With PySpark and AWS - Udemy
+- Python: Python Programming for Artificial Intelligence - Udemy
+- Machine Learning and Python: A-Z Machine Learning - Udemy
+- Natural Language Processing With Transformers in Python - Udemy
+- Certificate of Attendance - AWS Innovate AI/ML Edition 2021
+{: .cv-detailed}
+
+## Awards
+{: .cv-section .cv-hide-brief}
+
+---
+{: .cv-hide-brief}
+
+University Scholarship (SJTU) and Chinese Government Scholarship (BIT) recipient
+{: .cv-summary}
+
+- **2017 – 2021** - University Scholarship, Shanghai Jiao Tong University
+- **2015 – 2017** - Chinese Government Scholarship, Beijing Institute of Technology
+{: .cv-detailed}
