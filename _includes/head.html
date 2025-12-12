@@ -20,11 +20,26 @@
   {%- assign style_light_css = site.style_light | append: '.css' -%}
   {%- assign style_dark_css = site.style_dark | append: '.css' -%}
 
-  {%- if site.style_light == site.style_dark -%}
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_light_css | relative_url }}">
-  {%- else -%}
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_light_css | relative_url }}" media="screen and (prefers-color-scheme: light)">
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_dark_css | relative_url }}" media="screen and (prefers-color-scheme: dark)">
-  {%- endif -%}
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_light_css | relative_url }}" id="theme-light" data-theme="light">
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_dark_css | relative_url }}" id="theme-dark" data-theme="dark" disabled>
+
+  <script>
+    (function() {
+      var stored = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = stored || (prefersDark ? 'dark' : 'light');
+      var lightSheet = document.getElementById('theme-light');
+      var darkSheet = document.getElementById('theme-dark');
+      if (theme === 'dark') {
+        lightSheet.disabled = true;
+        darkSheet.disabled = false;
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        lightSheet.disabled = false;
+        darkSheet.disabled = true;
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
 
 </head>

@@ -4,4 +4,35 @@
   <li><a href="{{ site.baseurl }}/posts">posts</a></li>
   <li><a href="{{ site.baseurl }}/about">about</a></li>
   <li><a href="{{ site.baseurl }}/cv">cv</a></li>
+  <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme"></button></li>
 </ul>
+
+<script>
+  (function() {
+    var toggle = document.getElementById('theme-toggle');
+    var lightSheet = document.getElementById('theme-light');
+    var darkSheet = document.getElementById('theme-dark');
+
+    function getCurrentTheme() {
+      return darkSheet.disabled ? 'light' : 'dark';
+    }
+
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        lightSheet.disabled = true;
+        darkSheet.disabled = false;
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        lightSheet.disabled = false;
+        darkSheet.disabled = true;
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+      localStorage.setItem('theme', theme);
+    }
+
+    toggle.addEventListener('click', function() {
+      var current = getCurrentTheme();
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  })();
+</script>

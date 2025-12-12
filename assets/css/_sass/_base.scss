@@ -173,3 +173,27 @@ header p {
     color: var(--background-color);
     background-color: var(--base-color);
 }
+
+/**
+ * Theme Toggle Button
+ */
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    padding: 0.25em 0.5em;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    color: var(--text-color);
+    transition: background-color 0.2s, color 0.2s;
+}
+.theme-toggle::before {
+    content: "[dark]";
+}
+[data-theme="dark"] .theme-toggle::before {
+    content: "[light]";
+}
+.theme-toggle:hover {
+    color: var(--background-color);
+    background-color: var(--base-color);
+}
