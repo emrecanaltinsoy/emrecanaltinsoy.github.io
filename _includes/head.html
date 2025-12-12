@@ -15,13 +15,17 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
   <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+  <!-- <link rel="manifest" href="/assets/favicon/site.webmanifest" /> -->
 
   {%- assign style_light_css = site.style_light | append: '.css' -%}
   {%- assign style_dark_css = site.style_dark | append: '.css' -%}
 
+  <!-- Preload both stylesheets to avoid FOUC -->
+  <link rel="preload" href="{{ "/assets/css/" | append: style_light_css | relative_url }}" as="style">
+  <link rel="preload" href="{{ "/assets/css/" | append: style_dark_css | relative_url }}" as="style">
+
   <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_light_css | relative_url }}" id="theme-light" data-theme="light">
-  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_dark_css | relative_url }}" id="theme-dark" data-theme="dark" disabled>
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_dark_css | relative_url }}" id="theme-dark" data-theme="dark">
 
   <script>
     (function() {
