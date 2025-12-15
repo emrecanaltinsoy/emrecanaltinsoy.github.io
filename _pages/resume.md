@@ -1,10 +1,11 @@
 ---
-title: cv
-layout: cv
-permalink: /cv
+title: resume
+layout: resume
+permalink: /resume
 ---
 
 ## Work Experience
+
 {: .cv-section}
 
 ---
@@ -55,6 +56,7 @@ permalink: /cv
 {: .cv-detailed}
 
 ## Education
+
 {: .cv-section}
 
 ---
@@ -90,6 +92,7 @@ Thesis: Ball and Beam System Control using Image Processing
 {: .cv-detailed}
 
 ## Publications
+
 {: .cv-section .cv-hide-brief}
 
 ---
@@ -105,6 +108,7 @@ Thesis: Ball and Beam System Control using Image Processing
 {: .cv-detailed}
 
 ## Certifications
+
 {: .cv-section .cv-hide-brief}
 
 ---
@@ -126,6 +130,7 @@ Thesis: Ball and Beam System Control using Image Processing
 {: .cv-detailed}
 
 ## Awards
+
 {: .cv-section .cv-hide-brief}
 
 ---

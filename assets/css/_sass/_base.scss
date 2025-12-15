@@ -4,32 +4,35 @@
  * Font face declarations
  */
 @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('/assets/fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'JetBrains Mono';
+  src: url('/assets/fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('/assets/fonts/JetBrainsMonoNerdFont-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'JetBrains Mono';
+  src: url('/assets/fonts/JetBrainsMonoNerdFont-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'CaskaydiaCove Nerd Font';
-    src: url('/assets/fonts/CaskaydiaCoveNerdFont-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'CaskaydiaCove Nerd Font';
+  src: url('/assets/fonts/CaskaydiaCoveNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'CaskaydiaCove Nerd Font';
-    src: url('/assets/fonts/CaskaydiaCoveNerdFont-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'CaskaydiaCove Nerd Font';
+  src: url('/assets/fonts/CaskaydiaCoveNerdFont-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 /**
@@ -47,43 +50,47 @@ $container-max-width: 600px !default;
  * Font selection via data attribute
  */
 :root {
-    font-family: $font-jetbrains;
+  font-family: $font-jetbrains;
 }
+
 :root[data-font="caskaydia-cove"] {
-    font-family: $font-caskaydia;
+  font-family: $font-caskaydia;
 }
 
 /**
  * Global
  */
 body {
-    background-color: var(--background-color);
-    margin: 0 auto;
-    padding: 0;
-    font-family: inherit;
-    font-size: $base-font-size;
-    color: var(--text-color);
-    text-align: left;
-    line-height: $base-line-height !important;
+  background-color: var(--background-color);
+  margin: 0 auto;
+  padding: 0;
+  font-family: inherit;
+  font-size: $base-font-size;
+  color: var(--text-color);
+  text-align: left;
+  line-height: $base-line-height !important;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-size: $base-font-size;
-    margin: 0px;
-    margin-top: 22px;
-    font-weight: bold;
-    color: var(--text-color);
+  font-size: $base-font-size;
+  margin: 0px;
+  margin-top: 22px;
+  font-weight: bold;
+  color: var(--text-color);
 }
+
 p,
 ul,
 ol {
-    margin: 0px;
-    color: var(--text-color);
+  margin: 0px;
+  color: var(--text-color);
 }
+
 ul {
   padding-left: 2em;
 }
@@ -95,237 +102,240 @@ ul li {
 }
 
 a {
-    text-decoration: underline;
-    color: var(--link-color);
+  text-decoration: underline;
+  color: var(--link-color);
 }
+
 a:hover {
-    color: var(--background-color);
-    background-color: var(--base-color);
+  color: var(--background-color);
+  background-color: var(--base-color);
 }
+
 @media only screen and (max-device-width: 500px) {
-    * {
-        font-size: $mobile-font-size !important;
-    }
+  * {
+    font-size: $mobile-font-size !important;
+  }
 }
 
 /**
  * Layout
  */
 .container {
-    width: $container-width;
-    max-width: $container-max-width;
-    margin-right: auto;
-    margin-left: auto;
+  width: $container-width;
+  max-width: $container-max-width;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 img {
-    display: block;
-    margin: 0 auto 0.5rem;
-    max-width: 100%;
+  display: block;
+  margin: 0 auto 0.5rem;
+  max-width: 100%;
 }
-img + em {
-    color: var(--text-color);
-    display: block;
-    font-size: 0.9rem;
-    font-style: normal;
-    text-align: center;
+
+img+em {
+  color: var(--text-color);
+  display: block;
+  font-size: 0.9rem;
+  font-style: normal;
+  text-align: center;
 }
+
 p {
-    word-wrap: break-word;
-    word-break: break-word;
-    white-space: pre-wrap;
-    margin-bottom: 15px;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: pre-wrap;
+  margin-bottom: 15px;
 }
+
 footer {
-    color: var(--text-color);
-    border-top: var(--border);
-    margin-top: 2em;
-    text-align: center;
-    margin-bottom: 2em;
+  color: var(--text-color);
+  border-top: var(--border);
+  margin-top: 2em;
+  text-align: center;
+  margin-bottom: 2em;
 }
+
 footer .contact {
-    margin-top: 1.5em;
+  margin-top: 1.5em;
 }
+
 footer .contact a {
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
 }
+
 footer .contact .icon {
-    width: 1em;
-    height: 1em;
-    vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
 }
+
 footer .contact .separator {
-    margin: 0 0.5em;
-    color: var(--subtext-color);
+  margin: 0 0.5em;
+  color: var(--subtext-color);
 }
+
 footer .copy {
-    font-size: 0.9em;
-    margin-top: 1em;
+  font-size: 0.9em;
+  margin-top: 1em;
 }
+
 header {
-    margin-top: 25px;
-    margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
+
 header p {
-    text-align: left;
-    margin: 0;
+  text-align: left;
+  margin: 0;
 }
 
 /**
  * Highlight/Markup
  */
 ::selection {
-    background: var(--selection-background);
-    color: var(--selection-text);
+  background: var(--selection-background);
+  color: var(--selection-text);
 }
+
 ::-moz-selection {
-    background: var(--selection-background);
-    color: var(--selection-text);
+  background: var(--selection-background);
+  color: var(--selection-text);
 }
 
 /**
  * Lists
  */
-:not(.menu) > ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 9px;
+:not(.menu)>ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 9px;
 }
-:not(.menu) > ul {
-    list-style-type: none;
+
+:not(.menu)>ul {
+  list-style-type: none;
 }
-:not(.menu) > ul > li:before {
-    content: "-";
-    margin-right: 9px;
+
+:not(.menu)>ul>li:before {
+  content: "-";
+  margin-right: 9px;
 }
 
 /**
  * Header/Navigation
  */
 .menu {
-    border-top: var(--border);
-    border-bottom: var(--border);
-    margin-bottom: 25px;
-}
-.menu ul {
-    margin-top: 12px;
-    padding-left: 0px;
-    list-style-type: none;
-    text-align: right;
-    display: flex;
-    justify-content: flex-end;
-}
-.menu ul li {
-    margin-left: 2em;
-}
-.menu ul li:first-child {
-    margin-left: 0px;
-    margin-right: auto;
-}
-.menu ul li a {
-    text-decoration: none;
-    color: var(--text-color);
-}
-.menu ul li a:hover {
-    text-decoration: none;
-    color: var(--background-color);
-    background-color: var(--base-color);
+  border-top: var(--border);
+  border-bottom: var(--border);
+  margin-bottom: 25px;
 }
 
-/**
- * Theme Toggle Button
- */
-.theme-toggle {
-    background: none;
-    border: 1px solid var(--text-color);
-    cursor: pointer;
-    padding: 0.25em 0.5em;
-    font-family: inherit;
-    font-size: $base-font-size;
-    color: var(--text-color);
-    transition: background-color 0.2s, color 0.2s;
+.menu ul {
+  margin-top: 12px;
+  padding-left: 0px;
+  list-style-type: none;
+  // text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
-.theme-toggle::before {
-    content: "[dark]";
+
+.menu ul li {
+  margin-left: 2em;
 }
-[data-theme="dark"] .theme-toggle::before {
-    content: "[light]";
+
+.menu ul li:first-child {
+  margin-left: 0px;
+  margin-right: auto;
 }
-.theme-toggle:hover {
-    color: var(--background-color);
-    background-color: var(--base-color);
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.menu ul li a:hover {
+  text-decoration: none;
+  color: var(--background-color);
+  background-color: var(--base-color);
 }
 
 /**
  * CV Complexity Slider
  */
 .cv-complexity {
-    display: flex;
-    align-items: center;
-    gap: 0.75em;
-    margin-bottom: 1.5em;
-    padding: 0.5em 0;
-    border-bottom: var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  margin-bottom: 1.5em;
+  padding: 0.5em 0;
+  border-bottom: var(--border);
 }
+
 .cv-complexity label {
-    margin: 0;
-    white-space: nowrap;
+  margin: 0;
+  white-space: nowrap;
 }
+
 .cv-complexity input[type="range"] {
-    flex: 1;
-    max-width: 150px;
-    height: 4px;
-    appearance: none;
-    -webkit-appearance: none;
-    background: var(--text-color);
-    border-radius: 2px;
-    cursor: pointer;
+  flex: 1;
+  max-width: 150px;
+  height: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--text-color);
+  border-radius: 2px;
+  cursor: pointer;
 }
+
 .cv-complexity input[type="range"]::-webkit-slider-thumb {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 14px;
-    height: 14px;
-    background: var(--base-color);
-    border: 2px solid var(--text-color);
-    border-radius: 50%;
-    cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: var(--base-color);
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  cursor: pointer;
 }
+
 .cv-complexity input[type="range"]::-moz-range-thumb {
-    width: 14px;
-    height: 14px;
-    background: var(--base-color);
-    border: 2px solid var(--text-color);
-    border-radius: 50%;
-    cursor: pointer;
+  width: 14px;
+  height: 14px;
+  background: var(--base-color);
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  cursor: pointer;
 }
+
 .cv-complexity #cv-complexity-label {
-    min-width: 5em;
-    text-align: left;
+  min-width: 5em;
+  text-align: left;
 }
 
 /**
  * CV Section Titles
  */
 .cv-section {
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-size: 0.85em;
-    color: var(--subtext-color);
-    margin-top: 2em;
-    margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85em;
+  color: var(--subtext-color);
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 
 /**
  * CV Entry Styling
  */
 .cv-entry {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
+
 .cv-entry p {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /**
@@ -336,16 +346,18 @@ header p {
  */
 #cv-content .cv-summary,
 #cv-content .cv-detailed {
-    display: none;
+  display: none;
 }
+
 #cv-content[data-complexity="2"] .cv-summary {
-    display: block;
+  display: block;
 }
+
 #cv-content[data-complexity="3"] .cv-detailed {
-    display: block;
+  display: block;
 }
 
 /* Hide elements at Brief level only */
 #cv-content[data-complexity="1"] .cv-hide-brief {
-    display: none;
+  display: none;
 }
