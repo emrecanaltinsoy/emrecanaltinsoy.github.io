@@ -8,23 +8,36 @@ layout: default
   <span id="cv-complexity-label">Standard</span>
 </div>
 
-<div id="cv-content" data-complexity="2">
-{{ content }}
+<div id="cv-content">
+  <div class="cv-level cv-level-1" style="display: none;">
+    {% capture brief_content %}{% include resume_brief.md %}{% endcapture %}
+    {{ brief_content | markdownify }}
+  </div>
+  <div class="cv-level cv-level-2">
+    {% capture standard_content %}{% include resume_standard.md %}{% endcapture %}
+    {{ standard_content | markdownify }}
+  </div>
+  <div class="cv-level cv-level-3" style="display: none;">
+    {% capture detailed_content %}{% include resume_detailed.md %}{% endcapture %}
+    {{ detailed_content | markdownify }}
+  </div>
 </div>
 
 <script>
-  (function() {
+  (function () {
     var slider = document.getElementById('cv-complexity-slider');
     var label = document.getElementById('cv-complexity-label');
-    var content = document.getElementById('cv-content');
-    var labels = { 1: 'Brief', 2: 'Standard', 3: 'Detailed' };
+    var levels = document.querySelectorAll('.cv-level');
+    var labels = {1: 'work log --brief', 2: 'work log --standard', 3: 'work log --detailed'};
 
     function updateComplexity(level) {
-      content.setAttribute('data-complexity', level);
+      levels.forEach(function (el, index) {
+        el.style.display = (index + 1) == level ? 'block' : 'none';
+      });
       label.textContent = labels[level];
     }
 
-    slider.addEventListener('input', function() {
+    slider.addEventListener('input', function () {
       updateComplexity(slider.value);
     });
 

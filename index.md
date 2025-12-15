@@ -1,5 +1,5 @@
 ---
-title: 
+title: /home/emrecan/
 layout: home
 permalink: /
 ---
