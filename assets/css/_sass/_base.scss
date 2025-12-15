@@ -447,3 +447,36 @@ header p {
   background-color: var(--yellow);
   color: var(--crust);
 }
+
+/**
+ * Preferences Buttons
+ */
+.preferences-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.pref-btn {
+  background: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  padding: 0.5em 1em;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.pref-btn:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.pref-btn.active {
+  background-color: var(--base-color);
+  border-color: var(--base-color);
+  color: var(--background-color);
+}
