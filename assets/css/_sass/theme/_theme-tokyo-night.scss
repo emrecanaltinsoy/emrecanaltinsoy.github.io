@@ -1,0 +1,35 @@
+@use "colors/_tokyo-night" as *;
+
+:root {
+  --base-color: #{$tokyo-night-blue};
+  --border: dashed 1px #{rgba($tokyo-night-cyan, 1)};
+  --selection-background: #{rgba($tokyo-night-cyan, 0.5)};
+  --selection-text: #{$tokyo-night-text};
+  --background-color: #{$tokyo-night-base};
+  --text-color: #{$tokyo-night-text};
+  --subtext-color: #{$tokyo-night-subtext1};
+  --placeholder-color: #{$tokyo-night-subtext1};
+  --link-color: #{$tokyo-night-purple};
+  --inline-code-background: #{$tokyo-night-surface1};
+  --yellow: #{$tokyo-night-yellow};
+  --crust: #{$tokyo-night-crust};
+
+  --code-color-1: #{$tokyo-night-green};
+  --code-color-2: #{$tokyo-night-text};
+  --code-color-3: #{$tokyo-night-red};
+  --code-color-4: #{$tokyo-night-orange};
+  --code-color-5: #{$tokyo-night-teal};
+  --code-color-6: #{$tokyo-night-cyan};
+  --code-color-7: #{$tokyo-night-red};
+  --code-color-8: #{$tokyo-night-teal};
+  --code-color-9: #{$tokyo-night-blue};
+  --code-color-10: #{$tokyo-night-blue};
+  --code-color-11: #{$tokyo-night-text};
+  --code-color-12: #{$tokyo-night-red};
+  --code-color-13: #{$tokyo-night-teal};
+  --code-color-14: #{$tokyo-night-blue};
+  --code-color-15: #{$tokyo-night-red};
+  --code-color-16: #{$tokyo-night-teal};
+  --code-color-17: #{$tokyo-night-red};
+  --code-color-18: #{$tokyo-night-blue};
+}

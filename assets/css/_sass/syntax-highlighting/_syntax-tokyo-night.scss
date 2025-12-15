@@ -1,0 +1,180 @@
+@use "colors/_tokyo-night" as *;
+@use "sass:color";
+
+.highlight {
+  .hll {
+    background-color: $tokyo-night-surface1;
+  }
+  background: color.adjust($tokyo-night-surface0, $lightness:5%);
+  .c {
+    color: $tokyo-night-overlay1;
+    font-style: italic;
+  }
+  .err {
+    border: 1px solid $tokyo-night-red;
+  }
+  .k {
+    color: $tokyo-night-purple;
+    font-weight: bold;
+  }
+  .o {
+    color: $tokyo-night-subtext0;
+  }
+  .cm {
+    color: $tokyo-night-overlay1;
+    font-style: italic;
+  }
+  .cp {
+    color: $tokyo-night-orange;
+  }
+  .c1, .cs {
+    color: $tokyo-night-overlay1;
+    font-style: italic;
+  }
+  .gd {
+    color: $tokyo-night-red;
+  }
+  .ge {
+    font-style: italic;
+  }
+  .gr {
+    color: $tokyo-night-red;
+  }
+  .gh {
+    color: $tokyo-night-blue;
+    font-weight: bold;
+  }
+  .gi {
+    color: $tokyo-night-green;
+  }
+  .go {
+    color: $tokyo-night-subtext0;
+  }
+  .gp {
+    color: $tokyo-night-blue;
+    font-weight: bold;
+  }
+  .gs {
+    font-weight: bold;
+  }
+  .gu {
+    color: $tokyo-night-cyan;
+    font-weight: bold;
+  }
+  .gt {
+    color: $tokyo-night-cyan;
+  }
+  .kc, .kd, .kn {
+    color: $tokyo-night-purple;
+    font-weight: bold;
+  }
+  .kp {
+    color: $tokyo-night-purple;
+  }
+  .kr {
+    color: $tokyo-night-purple;
+    font-weight: bold;
+  }
+  .kt {
+    color: $tokyo-night-orange;
+  }
+  .m {
+    color: $tokyo-night-orange;
+  }
+  .s {
+    color: $tokyo-night-green;
+  }
+  .na {
+    color: $tokyo-night-purple;
+  }
+  .nb {
+    color: $tokyo-night-dark-cyan;
+  }
+  .nc {
+    color: $tokyo-night-white;
+    font-weight: bold;
+  }
+  .no {
+    color: $tokyo-night-orange;
+  }
+  .nd {
+    color: $tokyo-night-yellow;
+  }
+  .ni {
+    color: $tokyo-night-subtext0;
+    font-weight: bold;
+  }
+  .ne {
+    color: $tokyo-night-red;
+    font-weight: bold;
+  }
+  .nf {
+    color: $tokyo-night-blue;
+  }
+  .nl {
+    color: $tokyo-night-teal;
+  }
+  .nn {
+    color: $tokyo-night-blue;
+    font-weight: bold;
+  }
+  .nt {
+    color: $tokyo-night-red;
+    font-weight: bold;
+  }
+  .nv {
+    color: $tokyo-night-white;
+  }
+  .ow {
+    color: $tokyo-night-purple;
+    font-weight: bold;
+  }
+  .w {
+    color: $tokyo-night-subtext0;
+  }
+  .mf, .mh, .mi, .mo {
+    color: $tokyo-night-orange;
+  }
+  .sb, .sc {
+    color: $tokyo-night-green;
+  }
+  .sd {
+    color: $tokyo-night-green;
+    font-style: italic;
+  }
+  .s2 {
+    color: $tokyo-night-green;
+  }
+  .se {
+    color: $tokyo-night-orange;
+    font-weight: bold;
+  }
+  .sh {
+    color: $tokyo-night-green;
+  }
+  .si {
+    color: $tokyo-night-cyan;
+    font-weight: bold;
+  }
+  .sx {
+    color: $tokyo-night-green;
+  }
+  .sr {
+    color: $tokyo-night-light-cyan;
+  }
+  .s1 {
+    color: $tokyo-night-green;
+  }
+  .ss {
+    color: $tokyo-night-light-cyan;
+  }
+  .bp {
+    color: $tokyo-night-dark-cyan;
+  }
+  .vc, .vg, .vi {
+    color: $tokyo-night-white;
+  }
+  .il {
+    color: $tokyo-night-orange;
+  }
+}

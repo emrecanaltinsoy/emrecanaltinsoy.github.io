@@ -4,7 +4,7 @@
 var PreferencesUtil = (function() {
   // Single source of truth for configuration
   var CONFIG = {
-    themes: ['latte', 'frappe', 'macchiato', 'mocha'],
+    themes: ['latte', 'frappe', 'macchiato', 'mocha', 'tokyo-night'],
     defaultTheme: 'latte',
     defaultDarkTheme: 'mocha',
     fonts: {

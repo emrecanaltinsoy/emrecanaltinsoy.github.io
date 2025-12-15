@@ -4,7 +4,9 @@ layout: default
 
 {{ content }} {%- if site.posts.size > 0 -%}
 
-<p>Last 3 posts:</p>
+<p>This is where I write about technical stuff I find interesting:</p>
+
+<p>Latest posts: <a href="{{ '/posts' | relative_url }}">[see all]</a></p>
 <ul>
   {%- for post in site.posts limit:3 -%}
   <li>
