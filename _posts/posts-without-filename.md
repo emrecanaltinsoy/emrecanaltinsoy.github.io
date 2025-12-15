@@ -30,4 +30,3 @@ class Jekyll::PostReader
     end
   end
 ```
-

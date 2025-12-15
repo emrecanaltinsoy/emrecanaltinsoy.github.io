@@ -1,5 +1,6 @@
 # Site settings
 title: Emrecan Altinsoy
+email: emrecanaltinsoy@gmail.com
 description: "notes about code, setups, workflow and why your favorite editor is the best one ever"
 baseurl: ""
 url: "emrecanaltinsoy.github.io"
@@ -22,6 +23,7 @@ sass:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
 
 # Build settings
 markdown: kramdown
