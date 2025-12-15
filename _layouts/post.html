@@ -2,4 +2,10 @@
 layout: default
 ---
 
+{%- if page.draft -%}
+<div class="draft-warning">
+  This post is a draft and may be incomplete or subject to change.
+</div>
+{%- endif -%}
+
 {{ content }}

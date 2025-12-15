@@ -361,3 +361,89 @@ header p {
 #cv-content[data-complexity="1"] .cv-hide-brief {
   display: none;
 }
+
+/**
+ * Draft Warning
+ */
+.draft-warning {
+  background-color: var(--yellow);
+  color: var(--crust);
+  padding: 0.75em 1em;
+  margin-bottom: 1.5em;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/**
+ * Tag Filter
+ */
+.tag-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: var(--border);
+}
+
+.tag-filter .tag-label {
+  margin-right: 0.5em;
+}
+
+.tag-btn {
+  background: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  padding: 0.25em 0.75em;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.tag-btn:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.tag-btn.active {
+  background-color: var(--base-color);
+  border-color: var(--base-color);
+  color: var(--background-color);
+}
+
+/**
+ * Post List Tags
+ */
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  margin-bottom: 0.5em;
+}
+
+.post-list li:before {
+  content: none;
+}
+
+.post-tags {
+  margin-left: 0.5em;
+}
+
+.post-tag {
+  font-size: 0.85em;
+  color: var(--subtext-color);
+  background-color: var(--inline-code-background);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  margin-left: 0.25em;
+}
+
+.post-tag-draft {
+  background-color: var(--yellow);
+  color: var(--crust);
+}

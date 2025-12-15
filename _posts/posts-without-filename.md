@@ -3,16 +3,17 @@ title: "Posts Without Date in Filename"
 date: 1st Oct 2022
 layout: post
 comments: false
-tags: New
+tags: 
+  - New
 excerpt_separator: <!--more-->
-hidden: false
+draft: true
 ---
 
-Typically, posts in Jekyll have a `YYYY-MM-DD` portion in the post’s filename. The individual markdown posts can be freed from this naming convention to reduce the clutter in the filename. 
+Typically, posts in Jekyll have a `YYYY-MM-DD` portion in the post’s filename. The individual markdown posts can be freed from this naming convention to reduce the clutter in the filename.
 
 <!--more-->
 
-Also, it become easier to export a set of `*.md` files from any note-taking app and add them to the `_posts` folder without worrying about changing the filenames. 
+Also, it become easier to export a set of `*.md` files from any note-taking app and add them to the `_posts` folder without worrying about changing the filenames.
 
 Tail does this by using a [small plugin](https://stackoverflow.com/a/68287682/9523246) that changes the `DATE_FILENAME_MATCHER` for `_posts` and `_drafts` folders
 
@@ -29,3 +30,4 @@ class Jekyll::PostReader
     end
   end
 ```
+

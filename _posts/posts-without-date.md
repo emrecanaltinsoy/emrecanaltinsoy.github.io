@@ -6,7 +6,7 @@ lastmod: 3rd Dec 2022
 comments: false
 tags: Tail
 excerpt_separator: <!--more-->
-hidden: false
+published: false
 ---
 
 Typically, posts in Jekyll have a `date` entry in the post’s frontmatter. This date, if not specified will be taken to be the date when the post was last modified.
@@ -25,6 +25,6 @@ lastmod: 3rd Dec 2022
 comments: false
 tags: Tail
 excerpt_separator: <!--more-->
-hidden: false
 ---
 ```
+

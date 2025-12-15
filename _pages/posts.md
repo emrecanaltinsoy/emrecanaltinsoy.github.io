@@ -4,4 +4,4 @@ layout: posts
 permalink: /posts
 ---
 
-My posts:
+<!-- My posts: -->

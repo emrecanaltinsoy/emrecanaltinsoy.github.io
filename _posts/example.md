@@ -4,11 +4,13 @@ title: "Example Content"
 date: 4th Oct 2022
 tags: Old
 excerpt_separator: <!--more-->
+published: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis.<!--more--> Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.
 
 # Headers
+
 ```markdown
 # H1
 ## H2
@@ -19,13 +21,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 ```
 
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
+
 ###### H6
 
 # Text formatting
+
 ```markdown
 - **Bold**
 - _Italics_
@@ -66,9 +74,9 @@ look like this:
 2. Ordered list item 2
 3. Ordered list item 3
 
-* Unordered list item 1
-* Unordered list item 2
-* Unordered list item 3
+- Unordered list item 1
+- Unordered list item 2
+- Unordered list item 3
 
 # Links
 
@@ -125,7 +133,6 @@ kramdown:
 
 ```
 
-
 # Blockquotes
 
 ```markdown
@@ -141,6 +148,7 @@ Use `<hr>` for horizontal rules like this
 ```markdown
 <hr>
 ```
+
 gives you
 
 <hr>
@@ -154,6 +162,5 @@ This <br> breaks the line
 which will give you:
 
 This <br> breaks the line
-
 
 _The end_
