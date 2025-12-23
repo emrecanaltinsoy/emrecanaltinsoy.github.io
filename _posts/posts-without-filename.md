@@ -6,7 +6,8 @@ comments: false
 tags: 
   - New
 excerpt_separator: <!--more-->
-draft: true
+# draft: true
+published: false
 ---
 
 Typically, posts in Jekyll have a `YYYY-MM-DD` portion in the post’s filename. The individual markdown posts can be freed from this naming convention to reduce the clutter in the filename.
