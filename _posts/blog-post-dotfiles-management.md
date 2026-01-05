@@ -14,6 +14,19 @@ Managing dotfiles across multiple machines, fresh installations, and different L
 
 In this post, I'll walk you through my setup that combines **GNU Stow** for dotfile management, **Ansible** for system automation, and a custom **Python TUI** for installing optional tools.
 
+## Table of Contents
+
+- [The Problem](#the-problem)
+- [Repository Structure](#repository-structure)
+- [Part 1: Dotfile Management with GNU Stow](#part-1-dotfile-management-with-gnu-stow)
+- [Part 2: System Automation with Ansible](#part-2-system-automation-with-ansible)
+- [Part 3: Interactive Package Selector](#part-3-interactive-package-selector)
+- [Part 4: Quick Setup Script (Debian Only)](#part-4-quick-setup-script-debian-only)
+- [Highlights from My Configurations](#highlights-from-my-configurations)
+- [Getting Started](#getting-started)
+- [Design Principles](#design-principles)
+- [Conclusion](#conclusion)
+
 ## The Problem
 
 Every developer faces these challenges at some point:
@@ -168,7 +181,7 @@ user_passphrase: "gpg_key_passphrase"
 
 **Developer Tools**:
 
-1. Neovim (stable AppImage)
+1. Neovim (Lazyvim latest stable)
 2. Lazygit (git TUI)
 3. Tmux + Oh My Tmux
 4. Starship prompt
@@ -224,7 +237,7 @@ Not every tool is needed on every machine. For optional installations, I built a
 │  ...                                                    │
 ├─────────────────────────────────────────────────────────┤
 │  Navigation: h/j/k/l or arrows | Space: toggle          │
-│  a: toggle all | Enter: confirm | q: quit               │
+│  a: toggle all | Enter: confirm | esc: quit             │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -234,10 +247,21 @@ Each package has a corresponding installation script in `package-selector/script
 
 ```bash
 # Example: install_neovim.sh
-#!/bin/bash
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
-sudo mv nvim.appimage /usr/local/bin/nvim
+#!/usr/bin/env bash
+
+shopt -s expand_aliases
+
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
+
+if [[ ! -d "$HOME/nvim-linux-x86_64" ]]; then
+  cd $HOME
+  wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux-x86_64.tar.gz -O "$HOME/nvim-linux-x86_64.tar.gz"
+  tar xzvf nvim-linux-x86_64.tar.gz
+  rm nvim-linux-x86_64.tar.gz
+  cd $SCRIPT_DIR
+else
+  echo "Neovim already exists. skipping."
+fi
 ```
 
 The TUI runs selected scripts sequentially and streams output in real time, showing success/failure for each installation.
